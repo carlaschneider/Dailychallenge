@@ -1,0 +1,89 @@
+basket = ["Banana", "Apples", "Oranges", "Blueberries"]
+del basket[0]
+print(basket)
+del basket[2]
+print(basket)
+basket.append("kiwi")
+print(basket)
+basket.insert(0, "Apples")
+print(basket)
+print(basket.count("Apples"))
+del basket[:]
+print(basket)
+
+#exercice1#
+my_fav_numbers = set([2])
+my_fav_numbers.add(4)
+my_fav_numbers.add(6)
+print(my_fav_numbers)
+my_fav_numbers.remove(6)
+print(my_fav_numbers)
+friend_fav_numbers = set([9,5])
+print(friend_fav_numbers)
+my_fav_numbers.update(friend_fav_numbers)
+print(my_fav_numbers)
+
+#exercice2#
+carla = (2, 8)
+print(carla)
+b2 = (7, 3)
+print(b2)
+c4 = carla + b2
+print(c4)
+
+
+
+#exercice3
+#float is a number with coma and a integer is just a number without coma
+#it is tel us class number beacause in set it's not defined the float.So it's not working
+#we can put a point instead of a comma
+list = [1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5]
+print(list)
+
+#exercice4
+pizza = []
+e = 1
+while e ==1:
+    a = input("Enter another element")
+    pizza.append(a)
+    print(pizza)
+    r = input("do you want to add another thing ? (yes or no)")
+    if r=="yes":
+        e=1
+    else :
+        e=0
+        input("it's finish")
+
+#exercice5
+age = int(input("Enter your age, please"))
+if age < 3:
+    print("Its free for chlidren")
+elif 3 < age < 12:
+    print("You have to paye 10$, please")
+else:
+    print("You have to paye 15$")
+
+#exercice7
+family = []
+e = 1
+while e ==1:
+    a = input("What is your age")
+    family.append(a)
+    print(family)
+    r = input("There is another person with you what is your age ? (yes or no)")
+    if r=="yes":
+        e=1
+    else :
+        e=0
+        if a < 3:
+          print("Its free for chlidren")
+        elif 3 < a < 12:
+          print("You have to paye 10$, please")
+        else:
+          print("You have to paye 15$")
+
+
+
+
+
+
