@@ -1,4 +1,4 @@
-date = input("enter")
+date = input("Enter your date of birth, please")
 [jj, mm, aa] = date.split("/")
 j, m, a = int(jj), int(mm), int(aa)
 nb_j = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
