@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{‰ load crispy_forms_tags %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'prestations.css' %}">
+<img class="displayed" src="{% static 'loggoesther.jpg' %}" width="200" height="200">
+<br>
+    <section class="container">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Suivez nous !</legend>
+                {{ form }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Soumettre</button>
+            </div>
+        </form>
+    </section>
+{% endblock content %}
+
+
+
+

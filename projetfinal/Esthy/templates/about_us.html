@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{‰ load crispy_forms_tags %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'prestations.css' %}">
+<img class="displayed" src="{% static 'loggoesther.jpg' %}" width="200" height="200">
+<br>
+<div align="center">
+    <h4><p>Esthy studio se nommer il y a peu de temps encore Esthy Beauty.</p>
+        <p>Celui-ci a été créer par Esther Berz qui pratique les methodes de Tatouages permanent depuis maintenant plus de 10ans.</p>
+        <p>Elle s'occupe aussi de pouvoir redonner confiance aux femmes qui ont vaincu le cancer du seins en pratiquant des reconstructions des tétons.</p>
+        <p>Elle ne laisse pas les hommes sur le côté non plus en proposant aussi ses services pour faire du tatouages permanent une solutions pour eux de
+        lutter contre la calvitie.</p>
+        <p>Elle met en pratique son talent et donne aussi la possibilité a qui le souhaite de venir se former chez elle.</p></h4>
+</div><br>
+<div>
+    <img  class="displayed" src="{% static 'esther.jpg' %}" width="400" height="400">
+</div>
+<div>
+  <div>
+  <div class="card-body">
+    <h5 class="card-title" style="color: #FF0090">Retrouvez nous sur Instagram</h5>
+    <h6 class="card-subtitle mb-2 text-muted" style="color: #FF0090"> Instagram</h6>
+    <a href="https://www.instagram.com/esthystudio/" class="card-link"><img src="{% static 'instalog.jpg' %}" width="30" height="30" style="color: #FF0090">EsthyStudio</a><br>
+  </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'prestations.css' %}">
+<section class="container">
+    <div><img class="displayed" src="{% static 'loggoesther.jpg' %}" width="200" height="200">
+    <h1 align="center"> Bienvenu chez Esthy Studio</h1></div>
+</section><br>
+ <section class="container">
+     <h1>Nos prestations :</h1><br>
+     <h2>Les sourcils:</h2>
+     <ul>
+         <li><h4>Microblading (Poil à poil)       275€</h4>
+             <p>Retouche 3 à 4 semaines 50€</p>
+         </li>
+         <li><h4>Microshading (ombrage et poil à poil)     300€</h4>
+             <p>Retouche 3 à 4 semaines 70€</p>
+         </li>
+         <li><h4>Shading (Ombrage)    250€</h4>
+             <p>Retouche 3 à 4 semaines 50€</p>
+         </li>
+         <li><h4>Brownist (Shadding nouvelle génération)  290€</h4>
+             <p>Retouche 3 à 4 semaines 70€</p>
+         </li>
+     </ul><br>
+     <p>Retouche 3 à 6 mois : 120 à 160€</p>
+     <p>Retouche 7 à 12 mois : 170 à 220€</p><br>
+     <h2>Les yeux:</h2>
+     <ul>
+         <li><h4>Eye liner haut OU bas      130€</h4></li>
+         <li><h4>Eye liner haut ET bas      235€</h4></li>
+         <li><h4>Densification ciliaire      100€</h4>
+         <p>Retouche 3 à 4 semaines 40€/ 3 à 6 mois 70 à 100€/ 7 à 12 mois 95 à 145€</p></li>
+     </ul><br>
+     <h2>La bouche:</h2>
+     <ul>
+         <li><h4>Candy lips(Leger contour et dégradé)  260€</h4>
+         <p>Retouche 3 à 4 semaines 90€</p>
+         </li>
+         <li><h4>LipBlush(Remplissage façon "baume" coloré  300€</h4>
+         <p>Retouche 3 à 4 semaines 100€</p>
+         </li>
+     </ul><br>
+     <p>Retouche 7 à 12 mois 180 à 250€</p><br>
+     <h2>Les petits plus:</h2>
+     <ul>
+         <li><h4>Grain de beauté  45€</h4></li>
+         <li><h4>Tâches de rousseur  90€</h4>
+             <p>Retouche : 45€</p>
+         </li>
+         <li><h4>Lashlift  55€</h4>
+             <p>+Teinture  60€</p>
+         </li>
+         <li><h4>Browlift  70€</h4>
+             <p>+Teinture  90€</p>
+         </li>
+     </ul><br>
+     <h2>Détatouage:</h2>
+     <ul>
+         <li><h4>Sourcil</h4>
+             <p>1ere séance 195€</p>
+             <p>Chaque séance suivante 95€</p>
+         </li>
+         <li><h4>Bouche</h4>
+             <p>1ere séance 235€</p>
+             <p>Chaque séance suivante 110€</p>
+         </li>
+     </ul>
+ </section>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'lipblush.jpg' %}" class="d-block w-100" alt="..." width="600" height="600">
+        <h5>Exemple de LipBlush</h5>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'microblading.jpg' %}" class="d-block w-100" alt="..." width="600" height="600">
+        <h5>Exemple de Microblading</h5>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'microshading.jpg' %}" class="d-block w-100" alt="..." width="600" height="600">
+        <h5>Exemple de MicroShading</h5>
+    </div>
+      <div class="carousel-item">
+      <img src="{% static 'lipblush2.jpg' %}" class="d-block w-100" alt="..." width="600" height="600">
+          <h5>LipBlush</h5>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+{% endblock %}
